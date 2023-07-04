@@ -10,9 +10,9 @@ body, html {
 }
 
 .container {
-    max-width: 768px;
+    max-width: 90%;
+    margin: 0 auto;
     height: fit-content;
-    margin: auto 70px;
 }
 
 .menu {

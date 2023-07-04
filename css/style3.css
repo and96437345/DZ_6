@@ -1,79 +1,20 @@
-.flex {
-    height: 500px;
-    border: 1px solid;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* justify-content: center; */
-    /* justify-content: space-around; */
-    /* justify-content: space-evenly; */
-    /* align-items: center; */
-    /* align-items: flex-start; */
-    /* align-items: flex-end; */
-    /* flex-direction: column; */
-    flex-direction: column-reverse;
-    flex-direction: row-reverse;
-    /* flex-wrap: wrap-reverse; */
-    display: grid;
-
-    grid-template-columns: repeat(5, 1fr 2fr);
-    /* grid-template-rows: 200px 400px 200px; */
-    gap: 10px 20px
-}
-
-.item {
-    /* height: 200px;
-    width: 200px; */
-    padding: 10px;
-    box-sizing: border-box;
-    min-width: 1px;
-}
-
-.item-1 {
-    /* flex-shrink: 0; */
-    background-color: brown;
-    /* order: 1; */
-    height: 200px;
-}
-
-.item-2 {
-    align-self: flex-end;
-    height: 400px;
-    background-color: yellow;
-
-}
-
-.item-3 {
-    height: 300px;
-    order: -1;
-    background-color: cadetblue;
-}
-img {
-    height: 50px;
-    width: 50px;
-}
-.post-item__right {
-    width: 10%;
-}
-.post-item__left {
-    width: 10%;
+.header {
+    padding: 20px 0;
+    border-bottom: 1px solid grey;
 }
 
 .container {
     max-width: 1000px;
     margin: 0 auto;
     width: 96%;
+    background-color: #70b99c;
 }
-
 .header__row {
     display: flex;
     justify-content: space-between;
 
 }
 
-.header {
-    padding: 20px 0;
-    border-bottom: 1px solid grey;
-}
 
 .header-left__icon,
 .header__right-icon {
@@ -99,9 +40,35 @@ img {
     margin-left: 10px;
 }
 
+.header img {
+    height: 50px;
+    width: 50px;
+}
+.post-item__right {
+    width: 15%;
+}
+.attach {
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+}
+
+.post-item__left {
+    width: 20%;
+    white-space: nowrap;
+}
+
+
+
+
 .main {
     display: flex;
     padding-top: 20px;
+    max-width: 96%;
+}
+.main_row {
+    
+    
 }
 
 .menu {
@@ -109,7 +76,7 @@ img {
     width: 300px;
     height: 500px;
     flex-shrink: 0;
-    margin-right: 25px;
+    /* margin-right: 25px; */
 }
 
 .post-item {
@@ -127,5 +94,11 @@ img {
 }
 
 .post-item__center {
+    max-width: 70%;
     margin: 0 20px 0 10%;
+}
+.post-item__desc {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
 }
