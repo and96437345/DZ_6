@@ -20,14 +20,13 @@ html {
 .header__row {
     display: flex;
     justify-content: space-between;
-
 }
 
 
 .header-left__icon,
 .header__right-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: grey;
     flex-shrink: 0;
     border-radius: 50%;
@@ -37,7 +36,7 @@ html {
 .header-left {
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .header-left__icon {
@@ -49,8 +48,8 @@ html {
 }
 
 .header img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 .main__row {
     display: flex;
@@ -111,7 +110,7 @@ li:hover {
 .board-left {
     display: flex;
     height: 100%;
-    width: 190px;
+    width: 192px;
     /* background-color: #6ab587; */
 }
 button img {
@@ -158,7 +157,99 @@ button {
   
 }
 .disc {
+    max-height: 20px;
+    margin: 0;
     overflow: hidden;
     color: #919191;
     margin-left: 5px;
+}
+.board:hover,
+.board:hover button{
+    background-color: #dcdcdc;
+    transition: .5s;
+}
+
+@media screen and (min-width: 550px) and (max-width: 800px) {
+    .board {
+        height: fit-content;
+        flex-direction: column;
+        position: relative;
+    }
+    .board-left {
+        height: 20px;
+    }
+    .board-center {
+        flex-direction: column;
+        height: fit-content;
+        width: 90%;
+    }
+    .name, .date, .board-center {
+        line-height: 20px;
+    }
+    .attach img {
+        margin-right: 50px;
+    }
+       
+    .board-right {
+        height: 20px;
+        width: 120px;
+        position: absolute;
+        top: 0;
+        right: -16px;
+    }
+    .name {
+        margin-left: 6px;
+    }
+
+}
+@media screen and (max-width: 550px) {
+    .board {
+        height: fit-content;
+        flex-direction: column;
+        position: relative;
+    }
+    .board-left {
+        height: 20px;
+    }
+    .board-center {
+        flex-direction: column;
+        height: fit-content;
+        width: 90%;
+    }
+    .name, .date, .board-center {
+        line-height: 20px;
+    }
+    .attach img {
+        margin-right: 15px;
+    }
+       
+    .board-right {
+        height: 20px;
+        width: 75px;
+        position: absolute;
+        top: 0;
+        right: -16px;
+    }
+    .name {
+        margin-left: 6px;
+    }
+    .menu {
+        width: 44px;
+    }
+    li {
+        padding-left: 10px;
+    }
+    ul {
+        width: 44px;
+        overflow: hidden;
+    }
+    .header-left__icon,
+    .header__right-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .header img {
+        height: 30px;
+        width: 30px;
+    }
 }
