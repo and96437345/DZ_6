@@ -1,7 +1,7 @@
 body, html {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 22px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,15 +10,17 @@ body, html {
 }
 
 .container {
-    max-width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
-    height: fit-content;
+    width:80%;
+    /* background-color: #bababa; */
 }
 
 .menu {
     display: flex;
     color: #858585;
     margin-top: 70px;
+    margin-bottom: 40px;
 }
 
 .menu__item {
@@ -26,11 +28,11 @@ body, html {
 }
 
 h1 {
-    font-size: 36px;
-    line-height: 46px;
+    font-size: 42px;
+    line-height: 50px;
     margin-block-start: 0.5em;
     margin-block-end: 1.2em;
-    width: 430px;
+    width: 500px;
 }
 
 .down__section {
@@ -40,16 +42,19 @@ h1 {
 
 .down__menu-items {
     display: flex;
+    justify-content: space-around;
+    width: 100%;
     align-items: center;
     list-style: none;
     padding-inline-start: 0;
+    /* background-color: #958a8a; */
 }
 .down__menu-item {
     display: flex;
     flex-direction: column;
-    margin-left: 22px;
-    font-size: 12px;
-    line-height: 14px;
+    margin-left: 14px;
+    font-size: 14px;
+    line-height: 17px;
 }
 span:first-child {
     color: #858585;
@@ -61,36 +66,49 @@ img {
 }
 @media screen and (max-width: 600px) {
     .container {
-        max-width: 450px;
-        margin: auto 30px;
+        /* background-color: #6a5757; */
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        
     }
     .menu {
-        margin-top: 40px;
+        margin-top: 30px;
+        margin-bottom: 15px;
     }
     .menu__item {
-        font-size: 22px;
-        line-height: 25px;
+        font-size: 18px;
+        line-height: 22px;
     }
     h1 {
-        font-size: 30px;
-        max-width: 360px;
+        font-size: 26px;
+        max-width: 300px;
+        line-height: 40px;
     }
     img {
         height: 80px;
         width: 80px;
     }
     .down__menu-item {
-        margin-left: 60px;
-        font-size: 18px;
-        line-height: 25px;
+        /* margin-left: 60px; */
+        font-size: 14px;
+        line-height: 15px;
     }
     .item_2 {
-        margin-left: 52px;        
+        /* margin-left: 52px;         */
     }
     .item_1, .item_2 {
         margin-bottom: 25px;
     }
+    .item_4 {
+        margin-right: 20px;
+    }
     .down__menu-items {
         flex-wrap: wrap;
+        max-width: 300px;
+        max-height: 110px;
+        justify-content: space-between;
 }
 }
